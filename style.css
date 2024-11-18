@@ -1,0 +1,171 @@
+html, body, div, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+}
+.headPanel {
+    height: 100px;
+    background-color: #FFC76D;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.logo{
+    position: absolute;
+    width:90px;
+    height: 90px;
+    top: 5%;
+    left: 1%;
+}
+
+.textBlock{
+    position: absolute;
+    top: 15%;
+    left: 120px;
+    
+}
+h1{
+    font-size: 40px;
+    
+}
+h2{
+    font-size: 19px;
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    background-color: black;
+    width: 100%; 
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;
+}
+p{
+    font-size: 17px;
+    margin: 10px 0; 
+}
+.mainPage{
+    background-color: rgb(125, 114, 190);
+    height: 650px;
+    width: 100%; 
+}
+.moreInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    width: 100%; 
+}
+.moreInfo h1{
+    font-size: 80px;
+    color: white;   
+}
+.moreInfo h2{
+    font-size: 30px;
+    color: white;
+}
+.player, .distance{
+    margin-right: 90px;
+}
+/*//////////////////////////////////////////////////////////////////////////*/
+.info{
+    height: 800px;
+    background-color: #FFC76D;
+    display: flex;
+    justify-content: center;
+}
+
+.infoText{
+    flex-direction: column;  
+    align-items: flex-start; 
+}
+
+
+/*Планшеты*/
+@media (max-width: 883px) {
+    .headPanel {
+        height: 80px;
+    }
+    .logo{
+        height: 70px;
+        width:70px;
+    }
+    .textBlock{
+        position: absolute;
+        left: 90px;
+    }
+    h1{
+        font-size: 32px;
+        
+    }
+    h2{
+        font-size: 16px;
+        
+    }
+    .menu{
+        height: 30px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+    .moreInfo h1{
+        font-size: 40px;
+    }
+    .moreInfo h2{
+        font-size: 20px;
+    }
+    .player, .distance{
+        margin-right: 40px;
+    }
+}
+/*Мобилка*/
+@media (max-width: 480px) { 
+    .headPanel {
+        height: 60px;
+    }
+    .textBlock{
+        position: absolute;
+        left: 60px;
+    }
+    .logo{
+        height: 50px;
+        width:50px;
+    }
+    h1{
+        font-size: 28px;
+        
+    }
+    h2{
+        font-size: 14px;
+        
+    }
+    .menu {
+        height: 190px;
+        flex-direction: column;  
+        align-items: flex-start;  
+        padding: 10px;           
+    }
+
+    .menu a {
+        font-size: 14px;
+        margin: 10px 0;          
+    }
+    .moreInfo h1{
+        font-size: 35px;
+    }
+    .moreInfo h2{
+        font-size: 15px;
+    }
+    .player, .distance{
+        margin-right: 20px;
+    }
+}
