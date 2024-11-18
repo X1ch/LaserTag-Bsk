@@ -53,7 +53,6 @@ p{
     margin: 10px 0; 
 }
 .mainPage{
-    background-color: rgb(125, 114, 190);
     height: 650px;
     width: 100%; 
 }
@@ -76,20 +75,86 @@ p{
 .player, .distance{
     margin-right: 90px;
 }
+.mainPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+label {
+    margin-bottom: 5px;
+}
+button {
+    padding: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px; 
+}
+.backgroundImg{
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    opacity: 0.7;
+    filter: blur(7px); 
+    z-index: 0;
+    position: absolute;  
+}
+.backgroundIMG{
+    height: 650px;
+    width: 100%;
+}
+.teamS{
+    height: 800px;
+    width: 100%;
+}
+.blockTeam{
+    height:150px;
+    background-color: black;
+    width: 100%; 
+}
+
 /*//////////////////////////////////////////////////////////////////////////*/
 .info{
     height: 800px;
+    width: 100%;
     background-color: #FFC76D;
     display: flex;
     justify-content: center;
 }
-
-.infoText{
-    flex-direction: column;  
-    align-items: flex-start; 
-}
-
-
 /*Планшеты*/
 @media (max-width: 883px) {
     .headPanel {
@@ -126,6 +191,13 @@ p{
     .player, .distance{
         margin-right: 40px;
     }
+    .mainPage{
+        height: 500px;
+    }
+    .backgroundIMG{
+        height: 500px;
+    }
+
 }
 /*Мобилка*/
 @media (max-width: 480px) { 
@@ -167,5 +239,12 @@ p{
     }
     .player, .distance{
         margin-right: 20px;
+    }
+    .backgroundIMG{
+        visibility: hidden; 
+        z-index: 0;
+    }
+    .mainPage{
+        height: 500px;   
     }
 }
